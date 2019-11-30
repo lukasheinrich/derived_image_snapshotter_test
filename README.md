@@ -1,5 +1,4 @@
-Snapshotter Tests
-===============
+# Snapshotter Tests
 
 This is an image building on top of `atlas/analysisbase`.
 
@@ -10,3 +9,8 @@ a remote snapshotter, that only the top layers added by the Dockerfile
 need to be downloaded in bulk. The rest should be taken from cvmfs.
 
 
+## Test job
+
+```
+docker run --rm -it lukasheinrich/derived_image_snapshotter_test:latest /analysis/src/testjob.sh
+```
